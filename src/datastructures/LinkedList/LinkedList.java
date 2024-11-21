@@ -179,4 +179,30 @@ public class LinkedList {
             temp = after;
         }
     }
+
+    public Node findKthFromEnd(int k){
+
+        // Verifica se k é invalido.
+        if(k < 0){
+            return null;
+        }
+
+        Node fast = head;
+        Node slow = head;
+
+        // move o ponteiro fast, até o elemento k, se não existir retorna null.
+        for(int i = 0; i < k; i++) {
+            if(fast == null) {
+                return null;
+            }
+            fast = fast.next;
+        }
+
+        while(fast != null && fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        return slow;
+    }
 }
