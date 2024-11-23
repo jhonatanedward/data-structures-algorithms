@@ -1,4 +1,4 @@
-package datastructures.LinkedList;
+package datastructures.DoublyLinkedList;
 
 public class DoublyLinkedList {
 
