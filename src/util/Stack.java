@@ -1,6 +1,5 @@
-package datastructures.Stack;
+package util;
 
-import java.util.LinkedList;
 
 public class Stack {
     public Node top;
