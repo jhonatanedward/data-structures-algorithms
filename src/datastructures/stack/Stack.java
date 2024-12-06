@@ -1,4 +1,4 @@
-package util;
+package datastructures.stack;
 
 
 public class Stack {

@@ -1,4 +1,4 @@
-package util;
+package datastructures.trees;
 
 public class BinarySearchTree {
 
