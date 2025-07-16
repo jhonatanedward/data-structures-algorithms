@@ -40,4 +40,26 @@ public class Heap {
             curr = parent(curr);
         }
     }
+
+    public Integer remove() {
+
+        int sizeHeap = heap.size();
+
+        if(sizeHeap == 0) return null;
+
+        if(sizeHeap == 1) return heap.remove(0);
+
+        Integer lastElement = heap.remove(sizeHeap - 1);
+
+        Integer actualFirst = heap.get(0);
+
+        heap.set(0, lastElement);
+
+        // sinkDown(0);
+        return actualFirst;
+    }
+
+    private void sinkDown(int index){
+        
+    }
 }

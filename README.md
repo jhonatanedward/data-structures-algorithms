@@ -1,32 +1,74 @@
-# Big O
+# Big O Notation (Quick Reference)
 
-Rules: 
-- Drop Constraints exemplo:
+**Big O notation** is a mathematical way to describe the performance or complexity of an algorithm. It expresses how the runtime or space requirements grow relative to the input size `n`, especially as `n` becomes large.
 
-- Tendo dois for loops não alinhados a complexidade seria O(2n), removemos a constraint e a complexidade é: O(n).
+## Why use Big O?
 
-- Drop Non-Dominants, Se temos um método contendo um for alinhado, sua complexidade é de: O(n²), e se neste mesmo método existir outro for não alinhado na sequencia, eliminariamos ele pois o que mais importa é a complexidade dominante.
+- To understand **how scalable** an algorithm is.
+- To compare algorithms independently of machine or language.
+- To focus on the most significant factors affecting performance.
 
-2³ = 8
-log² 8 = 3 - Significa que se pegasse o numero oito e dividisse ele repetidas vezes por 2, para chegar ao um numero, levariamos tres operações.
+# Big O Basic Concepts
 
-- Constant Time O(1) somente uma operação. se um método faz duas operações dropamos a constante para 1, pois o tempo é constante, mesmo que a lista de entrada aumente, serão executadas duas operações somente, sem loop.
+## O(1): Constant Time
+- Doesn't depend on the size of the data set.
+- **Example:** Accessing an array element by its index.
+
+## O(log n): Logarithmic Time
+- Splits the data in each step (divide and conquer).
+- **Example:** Binary search.
+
+## O(n): Linear Time
+- Directly proportional to the data set size.
+- **Example:** Looping through an array.
+
+## O(n log n): Linearithmic Time
+- Splits and sorts or searches data.
+- **Example:** Merge sort, quick sort.
+
+## O(n²): Polynomial Time
+- Nested loops for each power of n.
+- **Example:** Bubble sort (O(n²)).
+
+---
+
+## Omega (Ω) — Best Case
+- **What it means:** Omega (Ω) describes the best-case scenario for an algorithm.
+- **In simple terms:** It tells you the fastest an algorithm can run in the best circumstances.
+
+## Theta (Θ) — Average Case
+- **In simple terms:** It tells you what to generally expect in terms of time complexity.
+
+## Big O (O) — Worst Case
+- **What it means:** Big O (O) describes the worst-case scenario for an algorithm.
+- **In simple terms:** It tells you the slowest an algorithm can run in the worst circumstances.
+
+---
+
+## Useful Tips
+- **Drop Non-Dominant Terms:**  
+  In O(n² + n), focus on O(n²) as it will dominate for large n.
+- **Drop Constants:**  
+  O(2n) simplifies to O(n).
 
 
-# Data Structures
 
-Single LinkedList
+## Common Big O complexities
 
-## Complexity Operations
+- **O(1)** — Constant time (e.g., accessing an array element).
+- **O(log n)** — Logarithmic time (e.g., binary search).
+- **O(n)** — Linear time (e.g., simple loops through an array).
+- **O(n log n)** — Linearithmic time (e.g., efficient sorting algorithms like merge sort).
+- **O(n²)** — Quadratic time (e.g., nested loops).
+- **O(2ⁿ)** — Exponential time (e.g., solving some recursive problems naively).
+- **O(n!)** — Factorial time (e.g., generating all permutations).
 
-| Operacao         | Complexity  |
-| --------         | ----------  |
-| Append           | O(1)        |
-| Remove Last      | O(n)        |
-| Prepend          | O(1)        |
-| Remove first     | O(1)        |
-| Insert           | O(n)        |
-| Remove           | O(n)        |
-| Lookup by index  | O(n)        |
-| Lookup by value  | O(n)        |
+## Key points to remember
 
+✅ Focuses on **growth rate**, not exact speed.  
+✅ Describes **worst-case** most commonly (but can also describe best or average case).  
+✅ Helps design and choose more efficient algorithms.
+
+---
+
+> "Big O doesn't care about small constants or exact execution time — it cares about how things grow as your input gets huge!"
