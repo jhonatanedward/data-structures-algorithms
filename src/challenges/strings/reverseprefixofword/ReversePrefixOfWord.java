@@ -1,4 +1,4 @@
-package challenges.arrays.reverseprefixofword;
+package challenges.strings.reverseprefixofword;
 
 public class ReversePrefixOfWord {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package challenges.arrays.reverseonlyletters;
+package challenges.strings.reverseonlyletters;
 
 public class ReverseOnlyLetters {
     public static void main(String[] args) {
