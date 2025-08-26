@@ -1,4 +1,4 @@
-package challenges.strings.reverseonlyletters;
+package challenges.twopointers;
 
 public class ReverseOnlyLetters {
     public static void main(String[] args) {

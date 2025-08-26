@@ -1,4 +1,4 @@
-package challenges.strings.palindrome;
+package challenges.twopointers;
 
 public class Palindrome {
 
