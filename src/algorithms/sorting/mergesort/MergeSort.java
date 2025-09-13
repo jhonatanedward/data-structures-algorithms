@@ -2,6 +2,16 @@ package algorithms.sorting.mergesort;
 
 import java.util.Arrays;
 
+
+/*
+    **Merge Sort** is a **divide and conquer** sorting algorithm that:
+    1. Divides the array into two halves.
+    2. Recursively sorts each half.
+    3. Merges the two sorted halves into a single sorted array.
+
+    - Works efficiently on large datasets.
+    - Stable sort (preserves relative order of equal elements).
+ */
 public class MergeSort {
 
     public int[] merge(int[] array1, int[] array2) {

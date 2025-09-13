@@ -2,6 +2,11 @@ package algorithms.sorting.bubblesort;
 
 import java.util.Arrays;
 
+/*
+    Bubble Sort repeatedly steps through the list, compares **adjacent elements**,
+    and **swaps them if they are in the wrong order**.
+    After each full pass, the largest element "bubbles up" to its correct position.
+ */
 public class BubbleSort {
     public static void bubbleSort(int[] array) {
         for(int i = array.length - 1; i > 0; i--) {
