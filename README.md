@@ -1,8 +1,8 @@
-borala
+# DSA ( Data Structure and Algorithms )
 
-* * *
+This repo contains collection of cheat sheets, solved problems, algorithms and data structures implementations from scratch.
 
-This article will be a collection of cheat sheets that you can use as you solve problems and prepare for interviews. You will find:
+Overview:
 
 *   Time complexity (Big O) cheat sheet
 *   General DS/A flowchart (when to use each DS/A)
