@@ -1,4 +1,4 @@
-package euler;
+package problems.euler;
 
 public class Euler07 {
 

@@ -1,6 +1,4 @@
-package euler;
-
-import java.time.LocalDateTime;
+package problems.euler;
 
 public class Euler03 {
 

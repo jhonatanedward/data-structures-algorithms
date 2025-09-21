@@ -1,4 +1,4 @@
-package baseconverter;
+package algorithms.baseconverter;
 
 public class BaseConversion {
 
