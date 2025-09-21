@@ -12,9 +12,9 @@ public class KokoEatingBananas {
         int result = h;
         while(l <= r) {
             int k = l + (r - l) / 2;
-            int totalTime = 0;
+            Long totalTime = 0L;
             for(int pile : piles) {
-                totalTime += (int) Math.ceil((double) pile / k);
+                totalTime += (pile + k - 1) / k;
             }
 
             if(totalTime > h) {
@@ -26,25 +26,5 @@ public class KokoEatingBananas {
         }
 
         return result;
-//        int left = 1;
-//        int right = Arrays.stream(piles).max().getAsInt();
-//        int r = h;
-//
-//        while(left <= right) {
-//            int k = (right + left)  / 2;
-//            int hoursToEat = 0;
-//            for(int pile : piles) {
-//                hoursToEat += (int) Math.ceil((double) pile / k);
-//            }
-//
-//            if(hoursToEat > h) {
-//                left = k + 1; // means koko needs to eat more bananas per hour to achive h.
-//            }else {
-//                r = k;
-//                right = k - 1;
-//            }
-//        }
-//
-//        return r;
     }
 }
